@@ -1,0 +1,195 @@
+ /* Bryna Sofia Antonio del Angel */
+:root{
+    --color-de-fondo: #b3c7f5;   /* azul gris pastel */
+    --color-de-lertras: #f1f2f5; /* azul oscuro suave */
+    --color-barra: #54056cd6;      /* azul pastel medio */
+    --color-boton: #ddd;     /* rojo coral pastel */
+    --color-extra: #110606;     /* rojo suave */
+    }
+
+
+    body{
+        background-color: #8c61e2c2 ;
+    }
+    h1,h2{
+        font-family: 'Bergell LET', sans-serif;
+        color: var();
+        text-align: center;
+    }
+
+/* Contenedor principal */
+.container1 {
+    width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Grupo de inputs */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Inputs y textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    outline: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+/* Efecto al enfocar */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff7eb3;
+    box-shadow: 0 0 8px rgba(255, 126, 179, 0.4);
+}
+
+/* Botón */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #4facfe, #ff7eb3);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover botón */
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+/* Input file */
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid var(--color-boton);
+    background-color: #fff;
+    color: var(--color-de-letras);
+    cursor: pointer;
+}
+
+/* Botón interno (Chrome, Edge) */
+input[type="file"]::file-selector-button {
+    background: linear-gradient(135deg, var(--color-boton2), var(--color-boton));
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+input[type="file"]::file-selector-button:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+/* Grid de tarjetas */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* Tarjeta */
+.x-card {
+    background: #1e293b;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover bonito */
+.x-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* Header */
+.card-header {
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    font-size: 18px;
+}
+
+.card-body p {
+    color: #e2e8f0; /* color claro */
+}
+/* Imagen */
+.card-img-container {
+    width: 95%;
+    height: 350px;
+    overflow: hidden;
+    background: #0f172a;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Zoom en imagen */
+.x-card:hover .card-img {
+    transform: scale(1.1);
+}
+
+/* Cuerpo */
+.card-body {
+    padding: 15px;
+}
+
+/* Etiquetas */
+.stat-label {
+    font-weight: bold;
+    color: #38bdf8;
+     margin-right: 6px;
+}
+
+/* Texto pequeño */
+.small {
+    font-size: 13px;
+    color: #cbd5f5;
+    margin-top: 10px;
+}
+
+/* Línea */
+hr {
+    border: none;
+    height: 1px;
+    background: #ced3dc;
+    margin: 10px 0;
+}

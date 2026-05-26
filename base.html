@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="titulo">Hola</h1>
+
+<button onclick="cambiarTexto()">Cambiar texto</button>
+
+<script>
+function cambiarTexto() {
+  document.getElementById("titulo").innerHTML = "Bienvenido a mi página";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+  /* Estilo básico para que la tabla se vea limpia */
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Quita el espacio entre bordes */
+    font-family: Arial, sans-serif;
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  /* Color para el encabezado */
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  /* Color diferente para filas alternas (cebreado) */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+</style>
+</head>
+<body>
+
+<h2>Lista de Pendientes</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tarea</th>
+      <th>Prioridad</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Estudiar el DOM</td>
+      <td>Alta</td>
+      <td>En curso</td>
+    </tr>
+    <tr>
+      <td>Hacer diapositivas</td>
+      <td>Media</td>
+      <td>Pendiente</td>
+    </tr>
+    <tr>
+      <td>Practicar querySelector</td>
+      <td>Alta</td>
+      <td>Terminado</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+
+
+
